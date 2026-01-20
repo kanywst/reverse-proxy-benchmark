@@ -1,0 +1,16 @@
+http:
+  routers:
+    to-upstream:
+      rule: "PathPrefix(`/`)"
+      service: upstream-service
+      entryPoints: [web]
+  services:
+    upstream-service:
+      loadBalancer:
+        servers: [{ url: "http://127.0.0.1:8080" }]
+entryPoints:
+  web:
+    address: ":8081"
+providers:
+  file:
+    filename: ./traefik.yml
