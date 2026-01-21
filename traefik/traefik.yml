@@ -13,4 +13,4 @@ entryPoints:
     address: ":8081"
 providers:
   file:
-    filename: ./traefik.yml
+    filename: traefik/traefik.yml

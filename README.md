@@ -75,12 +75,12 @@ Run `./bench.sh` to sequentially benchmark all proxies and display the results.
 
 Executed on 2026/01/21 (MacBook Pro M1 Max / 32GB RAM)
 
-| Proxy | Requests/Sec | Transfer/Sec | Errors |
-| :--- | :--- | :--- | :--- |
-| **Envoy** | 39,265 | 5.72 MB | 1,763 (Non-2xx) |
-| **Nginx** | 39,222 | 5.58 MB | 684 (Non-2xx) |
-| **Pingora** | 32,829 | 3.98 MB | **0** |
-| **Traefik** | 8,002 | 7.81 MB | 0 (8 connect errors) |
+|    Proxy    | Requests/Sec | Transfer/Sec |        Errors        |
+| :---------: | :----------: | :----------: | :------------------: |
+|  **Envoy**  |    39,265    |   5.72 MB    |   1,763 (Non-2xx)    |
+|  **Nginx**  |    39,222    |   5.58 MB    |    684 (Non-2xx)     |
+| **Pingora** |    32,829    |   3.98 MB    |        **0**         |
+| **Traefik** |    8,002     |   7.81 MB    | 0 (8 connect errors) |
 
 ### Analysis
 

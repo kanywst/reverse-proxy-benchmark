@@ -1,9 +1,11 @@
 package main
+
 import (
-    "fmt"
-    "net/http"
-    "runtime"
+	"fmt"
+	"net/http"
+	"runtime"
 )
+
 func main() {
     runtime.GOMAXPROCS(runtime.NumCPU())
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
